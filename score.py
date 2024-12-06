@@ -24,3 +24,4 @@ def score(section):
         elif section == "sixes":
             sixes = int(input("how many points to add to this section?"))
 #===    ===========================================================
+

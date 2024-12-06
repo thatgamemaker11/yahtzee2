@@ -24,3 +24,4 @@ def dieRand(loc):
     elif num == 6:
         dice.six(loc)
         return 6
+

@@ -17,3 +17,4 @@ if keep4 == False:
   die4 = roll.dieRand(30)
 if keep5 == False:
   die5 = roll.dieRand(80)
+  
