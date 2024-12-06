@@ -8,11 +8,7 @@ def score(section):
     sixes = 0
     while True:
         if section == "ones":
-            if ones == 0:
-                ones = int(input("how many points to add to this section?"))
-                break
-            else:
-                print("You already have a score here!")
+            ones = int(input("how many points to add to this section?"))
         elif section == "twos":
             twos = int(input("how many points to add to this section?"))
         elif section == "threes":
@@ -24,4 +20,3 @@ def score(section):
         elif section == "sixes":
             sixes = int(input("how many points to add to this section?"))
 #===    ===========================================================
-
