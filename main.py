@@ -23,11 +23,11 @@ while True:
         die5 = roll.dieRand(80)
 
     for i in range(3):
-        keep1 = input("Do you want to keep dice 1? (T/F) ").upper
-        keep2 = input("Do you want to keep dice 2? (T/F) ").upper
-        keep3 = input("Do you want to keep dice 3? (T/F) ").upper
-        keep4 = input("Do you want to keep dice 4? (T/F) ").upper
-        keep5 = input("Do you want to keep dice 5? (T/F) ").upper
+        keep1 = input("Do you want to keep dice 1? (T/F) ").upper()
+        keep2 = input("Do you want to keep dice 2? (T/F) ").upper()
+        keep3 = input("Do you want to keep dice 3? (T/F) ").upper()
+        keep4 = input("Do you want to keep dice 4? (T/F) ").upper()
+        keep5 = input("Do you want to keep dice 5? (T/F) ").upper()
 
 
         if keep1 == "F":
