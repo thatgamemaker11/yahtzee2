@@ -1,7 +1,7 @@
 import turtle
 
 t = turtle.Turtle('turtle')
-scale = 3
+scale = 1.5
 turtle.bgcolor("red")
 t.hideturtle()
 
@@ -10,13 +10,24 @@ t.width(int(10 / scale))
 t.setheading(0)
 t.width(int(10 / scale))
 
+num = 1
+t.penup()
+t.goto(0, -200)
+t.pendown()
+t.left(90)
+for i in range(5):
+    t.write(num, move=False, align='left', font=('Arial', 30, 'normal'))
+    num = num + 1
+    t.forward(90)
+
+
 
 def one(loc):
     t.penup()
 
     t.setheading(0)
     t.width(int(10 / scale))
-    t.goto(loc, 50)
+    t.goto(50, loc)
     t.pendown()
 
     t.fillcolor("white")
@@ -38,7 +49,7 @@ def one(loc):
 
 def two(loc):
     t.penup()
-    t.goto(loc, 50)
+    t.goto(50, loc)
     t.pendown()
 
     t.width(int(10 / scale))
@@ -73,7 +84,7 @@ def two(loc):
 def three(loc):
     t.penup()
 
-    t.goto(loc, 50)
+    t.goto(50, loc)
     t.width(int(10 / scale))
     t.setheading(0)
     t.pendown()
@@ -114,7 +125,7 @@ def three(loc):
 
 def four(loc):
     t.penup()
-    t.goto(loc, 50)
+    t.goto(50, loc)
 
     t.width(int(10 / scale))
     t.setheading(0)
@@ -164,7 +175,7 @@ def four(loc):
 def five(loc):
     t.penup()
 
-    t.goto(loc, 50)
+    t.goto(50, loc)
     t.width(int(10 / scale))
     t.setheading(0)
     t.pendown()
@@ -222,7 +233,7 @@ def five(loc):
 def six(loc):
     t.penup()
 
-    t.goto(loc, 50)
+    t.goto(50, loc)
     t.width(int(10 / scale))
     t.setheading(0)
     t.pendown()

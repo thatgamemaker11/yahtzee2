@@ -1,26 +1,33 @@
+#imports
 import card
 import roll
 import score
 
 
-
+#setting booleans
 keep1 = "F"
 keep2 = "F"
 keep3 = "F"
 keep4 = "F"
 keep5 = "F"
-#card.card()
-while True:
+
+#card
+card.cardgif()
+card.pointDraw(2)
+
+scale = 1.8
+
+while True: #loop to keep the game going
     if keep1 == "F":
-        die1 = roll.dieRand(-120)
+        die1 = roll.dieRand(-120*scale)
     if keep2 == "F":
-        die2 = roll.dieRand(-70)
+        die2 = roll.dieRand(-70*scale)
     if keep3 == "F":
-        die3 = roll.dieRand(-20)
+        die3 = roll.dieRand(-20*scale)
     if keep4 == "F":
-        die4 = roll.dieRand(30)
+        die4 = roll.dieRand(30*scale)
     if keep5 == "F":
-        die5 = roll.dieRand(80)
+        die5 = roll.dieRand(80*scale)
 
     for i in range(3):
         keep1 = input("Do you want to keep dice 1? (T/F) ").upper()
@@ -42,4 +49,4 @@ while True:
             die5 = roll.dieRand(80)
 
 
-    score.score(input("what section would you like to place you points in?"))
+    score.score(input("what section would you like to place you points in?")).lower()

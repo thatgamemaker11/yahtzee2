@@ -1,3 +1,4 @@
+from turtle import *
 def card():
   print("""
   | UPPER SECTION | HOW TO SCORE | GAME |
@@ -65,3 +66,21 @@ def card():
   =======================================
   """)
 
+def cardgif():
+    card = Turtle()
+    card.penup()
+    card.back(350)
+    screen = Screen()
+    screen.addshape("card cropped.gif")
+    card.shapesize(stretch_wid=0.1, stretch_len=0.1, outline=None)
+
+    card.shape("card cropped.gif")
+def pointDraw(row):
+    p = Turtle()
+    p.right(90)
+    p.forward(300)
+    p.setheading(0)
+    p.back(250)
+    p.left(90)
+    p.forward(20)
+    p.forward(30*row*2)
