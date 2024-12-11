@@ -2,6 +2,7 @@
 import card
 import roll
 import score
+import drawing
 
 
 #setting booleans
@@ -13,7 +14,7 @@ keep5 = "F"
 
 #card
 card.cardgif()
-card.pointDraw(2)
+card.pointDraw(15,"99")
 
 scale = 1.8
 
@@ -38,15 +39,16 @@ while True: #loop to keep the game going
 
 
         if keep1 == "F":
-            die1 = roll.dieRand(-120)
+            die1 = roll.dieRand(-120*scale)
         if keep2 == "F":
-            die2 = roll.dieRand(-70)
+            die2 = roll.dieRand(-70*scale)
         if keep3 == "F":
-            die3 = roll.dieRand(-20)
+            die3 = roll.dieRand(-20*scale)
         if keep4 == "F":
-            die4 = roll.dieRand(30)
+            die4 = roll.dieRand(30*scale)
         if keep5 == "F":
-            die5 = roll.dieRand(80)
+            die5 = roll.dieRand(80*scale)
+        print("===================================================================")
 
 
-    score.score(input("what section would you like to place you points in?")).lower()
+    score.score(input("what section would you like to place you points in?"))

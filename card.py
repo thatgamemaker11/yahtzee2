@@ -69,18 +69,18 @@ def card():
 def cardgif():
     card = Turtle()
     card.penup()
-    card.back(350)
+    card.back(320)
     screen = Screen()
-    screen.addshape("card cropped.gif")
+    screen.addshape("carddd.gif")
     card.shapesize(stretch_wid=0.1, stretch_len=0.1, outline=None)
 
-    card.shape("card cropped.gif")
-def pointDraw(row):
+    card.shape("carddd.gif")
+def pointDraw(row,score):
     p = Turtle()
-    p.right(90)
-    p.forward(300)
-    p.setheading(0)
-    p.back(250)
-    p.left(90)
-    p.forward(20)
-    p.forward(30*row*2)
+    p.penup()
+    p.hideturtle()
+    p.goto(-205,-336)
+    p.setheading(90)
+
+    p.forward(26*row-30)
+    p.write(score, font=("Arial", 14, "normal"),align="center")

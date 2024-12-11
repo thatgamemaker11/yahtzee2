@@ -18,7 +18,9 @@ t.left(90)
 for i in range(5):
     t.write(num, move=False, align='left', font=('Arial', 30, 'normal'))
     num = num + 1
+    t.penup()
     t.forward(90)
+    t.pendown()
 
 
 

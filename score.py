@@ -1,3 +1,4 @@
+import card
 
 def score(section):
     ones = 0
@@ -7,43 +8,52 @@ def score(section):
     fives = 0
     sixes = 0
     while True:
-        if section[0] == "O":
-            ones = int(input("how many points to add to this section?"))
+        if section[0] == "o":
+            ones = input("How many points to add to this section?")
+            card.pointDraw(26, ones)
             break
         elif section == "twos":
-            twos = int(input("how many points to add to this section?"))
+            twos = input("How many points to add to this section?")
+            card.pointDraw(26, ones)
             break
         elif section == "threes":
-            threes = int(input("how many points to add to this section?"))
+            threes = input("How many points to add to this section?")
+            card.pointDraw(26, ones)
             break
         elif section == "fours":
-            fours = int(input("how many points to add to this section?"))
+            fours = input("How many points to add to this section?")
+            card.pointDraw(26, ones)
             break
         elif section == "fives":
-            fives = int(input("how many points to add to this section?"))
+            fives = input("How many points to add to this section?")
+            card.pointDraw(26, ones)
             break
         elif section == "sixes":
-            sixes = int(input("how many points to add to this section?"))
+            sixes = input("How many points to add to this section?")
+            card.pointDraw(26, ones)
             break
 #===    ===========================================================
         elif section == "3 of a Kind":
-            threeOFK = int(input("how many points to add to this section?"))
+            threeOFK = input("How many points to add to this section?")
             break
         elif section == "4 of a Kind":
-            fourOFK = int(input("how many points to add to this section?"))
+            fourOFK = input("How many points to add to this section?")
             break
         elif section == "Full House":
-            FullH = int(input("how many points to add to this section?"))
+            FullH = input("How many points to add to this section?")
             break
         elif section == "Sm straight":
-            Smstr = int(input("how many points to add to this section?"))
+            Smstr = input("How many points to add to this section?")
             break
         elif section == "Lg straight":
-            Lgstr = int(input("how many points to add to this section?"))
+            Lgstr = input("How many points to add to this section?")
             break
         elif section == "YAHTZEE":
-            twos = int(input("how many points to add to this section?"))
+            twos = input("How many points to add to this section?")
             break
         elif section == "Chance":
-            threes = int(input("how many points to add to this section?"))
+            threes = input("How many points to add to this section?")
+            break
+        elif section == "YAHTZEE Bonus":
+            threes = input("How many points to add to this section?")
             break
